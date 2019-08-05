@@ -46,8 +46,8 @@ int main() {
 	cout << "Elements in the queue are: " << endl;
 	q2.display();
 
-	system("cls");
 	system("pause");
+	system("cls");
 
 	cout << "Testing Linked List" << endl;
 	LinkedList l;
@@ -57,7 +57,7 @@ int main() {
 	l.insertIntoList(5);
 	l.display();
 	cout << endl;
-	l.deleteFromList(3);
+	l.deleteFromList(2);
 	l.display();
 	cout << endl;
 	l.deleteFromList(2);
