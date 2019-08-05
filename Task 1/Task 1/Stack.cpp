@@ -90,6 +90,7 @@ void Stack::display() {
 		cout << data[index] << " ";
 		index--;
 	}
+	cout << endl;
 }
 
 

@@ -1,8 +1,10 @@
 #include <iostream>
 #include "Stack.h"
+#include "Queue.h"
 using namespace std;
 
 int main() {
+	cout << "Testing Stack" << endl;
 	Stack s1;
 	int size = 0, data = 0;
 	cout << "Enter the number of elements in the stack" << endl;
@@ -20,4 +22,27 @@ int main() {
 	cout << s2.top() << endl;
 	cout << "Elements in the stack are: " << endl;
 	s2.display();
+
+	system("pause");
+	system("cls");
+
+	cout << "Testing Queue" << endl;
+	Queue q1;
+	int size1 = 0, data1 = 0;
+	cout << "Enter the number of elements in the queue" << endl;
+	cin >> size1;
+	Queue q2(size1);
+	cout << "Enter the elements into the queue" << endl;
+	for (int i = 0; i < size1; i++) {
+		cin >> data1;
+		q2.push(data1);
+	}
+	cout << "The element at the front is: " << endl;
+	cout << q2.getTop() << endl;
+	q2.pop();
+	cout << "After popping an element the element at the front is: " << endl;
+	cout << q2.getTop() << endl;
+	cout << "Elements in the queue are: " << endl;
+	q2.display();
+
 }
