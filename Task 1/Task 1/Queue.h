@@ -40,7 +40,7 @@ public:
 	// Prototype for pop function
 	int pop();
 
-	// Prototype for get top of queue
+	// Prototype for get top element of queue
 	int getTop();
 
 	// Prototype for display queue elements

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Stack.h"
 #include "Queue.h"
+#include "LinkedList.h"
 using namespace std;
 
 int main() {
@@ -45,4 +46,20 @@ int main() {
 	cout << "Elements in the queue are: " << endl;
 	q2.display();
 
+	system("cls");
+	system("pause");
+
+	cout << "Testing Linked List" << endl;
+	LinkedList l;
+	l.insertIntoList(2);
+	l.insertIntoList(3);
+	l.insertIntoList(4);
+	l.insertIntoList(5);
+	l.display();
+	cout << endl;
+	l.deleteFromList(3);
+	l.display();
+	cout << endl;
+	l.deleteFromList(2);
+	l.display();
 }
